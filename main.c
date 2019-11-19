@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-/*Lab02*/
+/*Lab02
 int main(int argc, char *argv[]) {
 	int i = 0;
 	char str[4];
@@ -21,4 +22,14 @@ int main(int argc, char *argv[]) {
 	
 	printf("\n");
 	return 0;
+}*/
+
+/*Lab03*/
+main(){
+	char src[] = "The worst things to eat before you sleep.";
+	char dst[100];
+	
+	strcpy(dst, src);
+	
+	printf("copied string : %s\n", dst);
 }
