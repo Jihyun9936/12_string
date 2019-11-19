@@ -24,7 +24,7 @@ int main(int argc, char *argv[]) {
 	return 0;
 }*/
 
-/*Lab03*/
+/*Lab03
 main(){
 	char src[] = "The worst things to eat before you sleep.";
 	char dst[100];
@@ -32,4 +32,11 @@ main(){
 	strcpy(dst, src);
 	
 	printf("copied string : %s\n", dst);
+}*/
+
+/*Lab04*/
+main(){
+	char str[30] = "happy C programming";
+	
+	printf("length of the string (%s) : %d", str, strlen(str));
 }
