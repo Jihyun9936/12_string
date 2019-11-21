@@ -34,9 +34,27 @@ main(){
 	printf("copied string : %s\n", dst);
 }*/
 
-/*Lab04*/
+/*Lab04
 main(){
 	char str[30] = "happy C programming";
 	
 	printf("length of the string (%s) : %d", str, strlen(str));
+}*/
+
+/*Lab05*/
+int main(){
+	FILE *fp;
+	int i;
+	char input[100];
+	fp = fopen("text.txt", "w");
+	
+	for (i=0; i<3; i++){
+		printf("input a word : ");
+		scanf("%s", input);
+		fprintf(fp, "%s\n", input);
+	}
+	
+	fclose(fp);
+	return 0;
+
 }
